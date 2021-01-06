@@ -33,8 +33,8 @@ application{
 
 javafx {
 
-    //modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing', 'javafx.web','javafx.graphics']
-    modules = []
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.swing', 'javafx.web','javafx.graphics']
+    //modules = []
     version = "12" //'11.0.2'
 }
 
@@ -49,6 +49,19 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 
+    //datubaseak behar dituen dependentziak:
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'org.testng:testng:6.14.3'
+    implementation 'org.testng:testng:6.14.3'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.13'
+
+    //sqlite
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.28.0'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 
 
